@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        background-color:azure;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+
+    
+    }
+
+    .about-me {
+        display:flex;
+        flex-direction: row;
+        margin:50px;
+        justify-content: center;
+    
+
+    }
+
+    .contact {
+
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+
+    }
+#about-me-image {
+    margin-left:50px;
+}
+
+#contact-me-button{
+    width:100px;
+    height: 40px;
+    margin:10px;
+    background-color:khaki;
+    
+}
+</style>
+<body class="container">
+
+    <div class="about-me">
+        <div class="about-me-info">
+        <h1>Hi, I am Sabri.</h1>
+        <p>I am an Aerospace Engineer who works as an Operation Manager and eager to learn coding.</p>
+        <h2>Here are the few things I like doing:</h2>
+        <ul>
+            <li>Eating fresh vegetables from my garden</li>
+            <li>Walking with my dog when it rains as hell. Yes.</li>
+            <li>Working from home, for sure. </li>
+            <li>Writing softwares to make my life easier!</li>
+        </ul>
+        </div>
+        <div>
+            <img id="about-me-image" src="https://via.placeholder.com/300.png/09f/fff" alt="sabri-altinkaya-image">
+        </div>
+    </div>
+    <div class="contact">
+        <h3>If you also like to write softwares that will make your life easier, then lets talk!</h3>
+        <button id="contact-me-button" type="button" onclick="alert('Yeyy! We\'re gonna rule th world.')">Contact Me!</button>
+        <div class="social-buttons">
+            <a href="https://github.com/saltinkaya/" target="_blank">Github</a>
+            <a href="https://www.linkedin.com/in/sabri-altinkaya/" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+
+</body>
+</html>
