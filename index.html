@@ -5,71 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<style>
-    .container {
-        background-color:azure;
-        display:flex;
-        flex-direction:column;
-        justify-content: center;
 
-    
-    }
+<body>
 
-    .about-me {
-        display:flex;
-        flex-direction: row;
-        margin:50px;
-        justify-content: center;
-    
+   <!--
+<header class="main-header">
 
-    }
+     <h1 class="logo">
+            <img class="header-image" src="http://flexbox.ninja/assets/images/logo.svg" width="170" height="95" alt="brand-logo">
+     </h1>
+    <nav class="main-nav">
+            <ul class="main-nav-list">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">My Works</a>
+                </li>
+                <li>
+                    <a href="#">Contact Me</a>
+                </li>
+            </ul>
+    </nav>
 
-    .contact {
-
-        display:flex;
-        flex-direction: column;
-        align-items:center;
-
-    }
-#about-me-image {
-    margin-left:50px;
-}
-
-#contact-me-button{
-    width:100px;
-    height: 40px;
-    margin:10px;
-    background-color:khaki;
-    
-}
-</style>
-<body class="container">
-
-    <div class="about-me">
-        <div class="about-me-info">
-        <h1>Hi, I am Sabri.</h1>
-        <p>I am an Aerospace Engineer who works as an Operation Manager and eager to learn coding.</p>
-        <h2>Here are the few things I like doing:</h2>
-        <ul>
-            <li>Eating fresh vegetables from my garden</li>
-            <li>Walking with my dog when it rains as hell. Yes.</li>
-            <li>Working from home, for sure. </li>
-            <li>Writing softwares to make my life easier!</li>
+</header>
+-->
+<div class="box">
+<header class="main-header">
+    <div class="brand-logo">
+        <h1 class="brand-logo"> salt_design.</h1>
+    </div>
+    <nav class="header-nav">
+        <ul class="header-nav-ul-list">
+            <li class="header-nav-list-items" >
+                <a class="hrefs" href="#">Home</a>
+            </li>
+            <li class="header-nav-list-items" >
+                <a class="hrefs"  href="#">My Works</a>
+            </li>
+            <li class="header-nav-list-items" >
+                <a class="hrefs"  href="mailto:saltinkayaa@gmail.com">Contact Me</a>
+            </li>
         </ul>
-        </div>
-        <div>
-            <img id="about-me-image" src="https://via.placeholder.com/300.png/09f/fff" alt="sabri-altinkaya-image">
-        </div>
-    </div>
-    <div class="contact">
-        <h3>If you also like to write softwares that will make your life easier, then lets talk!</h3>
-        <button id="contact-me-button" type="button" onclick="alert('Yeyy! We\'re gonna rule th world.')">Contact Me!</button>
-        <div class="social-buttons">
-            <a href="https://github.com/saltinkaya/" target="_blank">Github</a>
-            <a href="https://www.linkedin.com/in/sabri-altinkaya/" target="_blank">LinkedIn</a>
-        </div>
-    </div>
+    </nav>
+</header>
 
+<section class="about-me">
+    <main class="information">
+        <h1>
+            Hello! I'm Sabri.
+        </h1>
+        <p>
+            I am a web developer.
+        </p>
+        <ul>
+            <button class="button button1">My Portfolio</button>
+            <button class="button button2">Hire me!</button>
+        </ul>
+<ul>
+        <a href="https://www.linkedin.com/in/sabri-altinkaya/" target="_blank" class="fa fa-linkedin fa-2x"></a>
+        <a href="https://github.com/saltinkaya" target="_blank" class="fa fa-github fa-2x"></a>
+    </ul>
+    </main>
+    <img class="portrait" src="image1.svg" alt="image1">
+</section>
+
+</div>
 </body>
 </html>
