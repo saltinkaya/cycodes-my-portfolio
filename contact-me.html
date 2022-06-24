@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-contact.css">
+</head>
+
+<body>
+    <!-- Created a form block -->
+    <form id="contact-us">
+
+<!-- Created a div for name input-->
+        <div class="name-input">
+            <label for="name1">Name:</label>
+            <input type="text" name="name" class="form-control" placeholder="Enter your name" id="name1"
+                autocomplete="off" value="" required>
+        </div>
+        <!-- Created a div for email input-->
+        <div class="email-input">
+            <label for="email">Email:</label>
+            <input type="email" name="email" class="form-control" placeholder="Enter your email adress" id="email"
+                value="" required>
+        </div>
+        <!-- Created a div for nmessage textarea-->
+        <div class="message-input">
+            <label for="message">Message:</label>
+            <textarea name="text-message" id="message" rows="5" cols="50" placeholder="Enter your message here!"
+                style="resize:vertical"></textarea>
+        </div>
+        <!-- Two buttons, submit will return values in the alert box, reset will clear the form -->
+        <div class="buttons">
+            <button id="submit-button" type="submit" form="contact-us">Submit</button>
+            <button id="reset-button"type="reset" form="contact-us">Reset</button>
+        </div>
+    </form>
+
+<script>
+    /* Declaring variables */
+    let name_input = document.getElementById('name1'); /* Name Input */
+    let email_input = document.getElementById('email'); /* Email input */ 
+    let text_message = document.getElementById('message'); /* Textarea Message */
+
+    let button = document.getElementById('submit-button');  /* Button */
+    
+    /* Get all values all together in the alert  */
+
+    button.addEventListener('click',function(){
+        alert("Name: " + name_input.value + 
+        "\nEmail: " + email_input.value + 
+        "\nYour Message: "+ text_message.value);
+    });
+
+
+</script>
+
+</body>
+
+</html>
