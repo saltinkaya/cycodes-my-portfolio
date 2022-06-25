@@ -1,6 +1,8 @@
-
 /* CSS Reset !! */
-* { margin: 0; padding: 0; }
+* {
+    margin: 0;
+    padding: 0;
+}
 
 
 :root {
@@ -13,8 +15,8 @@
 }
 
 body {
-background: var(--black);
-color: var(--white);
+    background: var(--black);
+    color: var(--white);
 }
 
 .box {
@@ -23,72 +25,79 @@ color: var(--white);
     height: 100vh;
 }
 
-/* Header */
+
+/* ------------------*/
+/* Header Starts here*/
+/* ------------------*/
+
 .main-header {
-    display:flex;
-    justify-content:space-between;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     position: sticky;
-    top:0;
+    top: 0;
     width: 100%;
     border-bottom: 2px solid var(--orange)
-
 }
 
 
 /* Header Logo */
-.brand-logo{
+.brand-logo {
 
-flex-grow:3;
-display:flex;
-justify-content: center;
-align-items: center;
-margin: 10px;
+    flex-grow: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
 
 
-font-family: 'Jura' , sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 14px;
+    font-family: 'Jura', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 14px;
 
 
 }
 
 /* Header Navigation */
 .header-nav {
-flex-grow: 1;
-display:flex;
-justify-content: flex-end;
-align-items: center;
-margin: 10px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px;
 }
 
 
 /* Unordered List group */
 .header-nav-ul-list {
-    display:flex;
+    display: flex;
     list-style-type: none;
 }
 
 .header-nav-list-items {
 
-padding:0 20px;
+    padding: 0 20px;
 }
 
 /* Nav bar menu items */
-.hrefs{
-color: var(--white);
-text-decoration: none;
-font-family: var(--font);
-font-size: 1.5em;
+.hrefs {
+    color: var(--white);
+    text-decoration: none;
+    font-family: var(--font);
+    font-size: 1.5em;
 
 }
 
+/* ----------------*/
+/* HEADER ENDS HERE*/
+/* ----------------*/
+
 /* About me section */
 .about-me {
-    display:flex;
+    display: flex;
     justify-content: space-evenly;
     height: 100%;
     align-items: center;
@@ -98,16 +107,17 @@ font-size: 1.5em;
 .about-me h1 {
     color: var(--white);
     font-family: var(--font);
-    font-size:2em;
+    font-size: 2em;
     padding: 10px 0;
 }
 
 .about-me p {
     color: var(--white);
     font-family: var(--font);
-    font-size:1.5em;
+    font-size: 1.5em;
     padding: 10px 0 20px 0;
 }
+
 /* All Buttons */
 .button {
     box-sizing: border-box;
@@ -127,9 +137,9 @@ font-size: 1.5em;
 }
 
 .button1 {
-border: 2px solid var(--orange);
-background-color: var(--black);
- 
+    border: 2px solid var(--orange);
+    background-color: var(--black);
+
 }
 
 .button2 {
@@ -139,13 +149,13 @@ background-color: var(--black);
 
 .fa {
     color: var(--orange);
-    margin:20px 0;
+    margin: 20px 0;
     text-decoration: none;
 
 }
 
 .fa-github {
-    padding-left:20px;
+    padding-left: 20px;
 }
 
 /* Image */
@@ -155,16 +165,17 @@ background-color: var(--black);
 
 
 @media screen and (max-width:800px) {
-    .main-header{
+    .main-header {
 
         flex-direction: column;
     }
+
     .header-nav {
         justify-content: center;
     }
 
-    .about-me{
-        
+    .about-me {
+
         flex-direction: column-reverse;
     }
 }

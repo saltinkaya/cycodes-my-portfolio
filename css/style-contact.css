@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --black: #21130d;
+    --white: #fffefa;
+    --orange: #fcba03;
+
+    --font: monospace;
+
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+    font-family: var(--font);
+}
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* ------------------*/
+/* Header Starts here*/
+/* ------------------*/
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    border-bottom: 2px solid var(--orange)
+}
+
+
+/* Header Logo */
+.brand-logo {
+
+    flex-grow: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+
+
+    font-family: 'Jura', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 14px;
+
+
+}
+
+/* Header Navigation */
+.header-nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px;
+}
+
+
+/* Unordered List group */
+.header-nav-ul-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.header-nav-list-items {
+
+    padding: 0 20px;
+}
+
+/* Nav bar menu items */
+.hrefs {
+    color: var(--white);
+    text-decoration: none;
+    font-family: var(--font);
+    font-size: 1.5em;
+
+}
+
+/* ----------------*/
+/* HEADER ENDS HERE*/
+/* ----------------*/
+
+
+/* ---------------------------------------------------- */
+
+
+/* ------------------------*/
+/* CONTACT FORM STARTS HERE*/
+/* ------------------------*/
+
+
+/* Main contact body */
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+/* Quote section */
+
+.quote {
+
+    width: 50vw;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* Contact Form Section */
+
+
+
+::placeholder {
+    color: var(--orange);
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--orange);
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--orange);
+  }
+
+
+
+
+
+#contact-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    width: 50vw;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+/* Select all div elements where parent is #contact-us*/
+
+#contact-us > div {
+  /*  background-color: yellow;*/
+    margin: 10px 0;
+
+}
+
+
+
+/* Form Name Element */
+.name-input {
+    display: flex;
+
+}
+
+
+#name1 {
+    width: 100%;
+    border: none;
+    border-bottom: 2px var(--orange) solid;
+    background-color: var(--black);
+    color:var(--orange);
+    padding:5px 0;
+    font-family: var(--font);
+
+}
+
+input:focus ,
+textarea:focus{
+   outline:none;
+   font-family: var(--font);
+}
+
+/* Form Email Element */
+
+#email{
+    width: 100%;
+    border: none;
+    border-bottom: 2px var(--orange) solid;
+    background-color: var(--black);
+    color:var(--orange);
+    padding:5px 0;
+    font-family: var(--font);
+
+
+
+}
+/* Form Textbox Element */
+
+#message {
+    width: 100%;
+    border: none;
+    border-bottom: 2px var(--orange) solid;
+    background-color: var(--black);
+    color:var(--orange);
+    padding:5px 0;
+    resize: none;
+    height:20px;
+    font-family: var(--font);
+
+
+}
+
+/* Buttons */
+
+.button {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    height: auto;
+    border:  2px solid var(--orange);
+    color: var(--white);
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em;
+    margin: 0.5rem 0;
+    cursor: pointer;
+    font-family: var(--font);
+}
+
+.button1 {
+    background-color: var(--black);
+
+}
+
+.button2 {
+    background-color: var(--orange);
+    color: var(--black)
+
+}
+
+
+
+
+
+/* ---------------------------------------------------- */
+
+
+
+/* ------------ */
+/* SCREEN SIZES */
+/* ------------ */
+
+
+@media screen and (max-width:800px) {
+    .main-header {
+
+        flex-direction: column;
+
+    }
+
+    .header-nav {
+        justify-content: center;
+    }
+
+    .contact{
+        flex-direction: column;
+    }
+    .quote,
+    #contact-us {
+        width:100%;
+    }
+}
+
+@media (max-width:480px) {
+    .hrefs {
+        font-size: 1.2em;
+    }
+
+    .contact{
+        flex-direction: column;
+    }
+
+    .quote,
+    #contact-us {
+        width:100%;
+    }
+}
